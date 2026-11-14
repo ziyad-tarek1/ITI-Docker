@@ -39,12 +39,6 @@ services:
     volumes:
       - redis:/data
 
-  mongo:
-    image: mongo:latest
-    ports:
-      - "27017"
-    volumes:
-      - mongo-data:/data/db
 
   db:
     image: postgres:14
